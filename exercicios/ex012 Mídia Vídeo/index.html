@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/img/favicon.ico" type="image/x-icon">
+    <title>Mídias de vídeos em HTML</title>
+</head>
+<body>
+    <h1>Mídias de YouTube</h1>
+    <h2>Vídeos hospedados localmente</h2>
+    <p>Esse vídeo está no meu servidor</p>
+
+    <!-- Coloque o 'muted' antes de 'autoplay', aí funciona -->
+    <video controls loop muted autoplay poster="midia/img/thumb.png" width="500px">
+        <source src="midia/vid/Video-01-.mp4.mp4" type="video/mp4">
+        <source src="midia/vid/Video-01.webm.webm" type="video/webm">
+        <source src="midia/vid/Video-01.ogv.ogv" type="video/ogv">
+        <p>Seu navegador não é compatível com vídeos</p>
+    </video>
+
+    <h2>Vídeo incorporado do YT</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=ZRk6nT39bbl8K6AE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=MIaiPB9Xb-HRWEXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+</body>
+</html>

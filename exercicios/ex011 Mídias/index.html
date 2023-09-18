@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1><p>Mídias em HTML5</p><p>&#x1F5BC;&#x1F3A7;&#x1F39E;</p></h1>
+
+    <h2>&#x1F4A9; Imagens Dinâmicas &#x1F4A9;</h2>
+    <p><mark>Abra este site</mark> em <em>dispositivos diferentes</em>, ou <ins>altere o tamanho</ins> da tela pelo <strong>navegador</strong> (use o inspecionar &#x1F60E;)</p>
+    <p>Por exemplo:</p>
+    <ul>
+        <li>Celular;</li>
+        <li>Tablet</li>
+        <li>Notebook;</li>
+        <li>Pc de mesa msm;</li>
+        <li>Ou até a TV.</li>
+    </ul>
+
+    <picture>
+        <source media="(max-width: 730px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="Imagem Grande">
+    </picture>
+
+    <h2>Musiquinhas &#x1F3B5; </h2>
+    <!-- 1º MP3, 2º OGG, 3º WAV  -->
+        <audio controls src="aud/Alone - Emmit Fenn.mp3"></audio>
+        <audio controls preload="metadata">
+            <source src="aud/Anxiety - NEFFEX.mp3" type="audio/mpeg">
+            <source src="aud/Away - Patrick Patrikios.mp3" type="audio/mpeg"> <!-- Música substituta -->
+        </audio>
+    <p>Musiquinha de fundo (autoplay não tá funcionando &#x1F62D;)</p>
+    <audio controls autoplay preload="auto" loop>
+        <source src="aud/genshin impact - background music.mp3" type="audio/mpeg">
+    </audio>
+    <p>&#x1F53D; downloads das músicas &#x1F53D;</p>
+    <ul>
+        <li><a href="aud/Alone - Emmit Fenn.mp3" download="aud/Alone - Emmit Fenn.mp3" type="audio/mped">Alone - Emmit Fenn</a></li>
+        <li><a href="aud/Anxiety - NEFFEX.mp3" download="aud/Anxiety - NEFFEX.mp3" type="audio/mped">Anxiety - NEFFEX</a></li>
+        <li><a href="aud/genshin impact - background music.mp3" download="aud/genshin impact - background music.mp3" type="audio/mpeg">Genshin Impact - Background Music</a></li>
+    </ul>
+</body>
+</html>

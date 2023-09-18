@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+            background-color: black;
+        }
+
+        .especial {
+            color: white;
+            background-color: blue;
+            border-radius: 1000px;
+            
+        }
+        .especial::before {
+            content: '⭐ ';
+        }
+        .especial::after {
+            content: ' ⭐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a target="_blank" href="https://www.crazygames.com.br">Crazy Games</a></li>
+        <li><a class="especial" target="_blank" href="https://www.youtube.com/@K4leb_">Meu canal no youtube</a></li>
+        <li><a target="_blank" href="https://www.cursoemvideo.com/">Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
