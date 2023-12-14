@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 02</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin: 10px;
+            color: darkslategray;
+        } 
+
+        thead > tr > th {
+            position: sticky; /* sticky = que cola */
+            top: -1px;
+            background-color: darkslategray;
+        }
+
+        thead, tfoot {
+            background-color: darkslategray;
+            color: white;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        td {
+            text-align: left;
+        }
+        
+        td.num {
+            padding: 10px 30px 10px 30px;
+            text-align: right;
+        }
+
+        /* EFEITO ZEBRADO NO BODY DA TABELA */
+        /* even/2n = par, odd/2n-1 = impar */
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas GRANDES</h1>
+
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                tr th td
+            TBODY
+                tr th td
+            TFOOT
+                tr th td
+     -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tfoot> <!-- independente a posição dessas 'divs de tabela', o navegador organiza da maneira correta -->
+            <tr>
+                <th  scope="row">Total de Habitantes:</th>
+                <td class="num"><strong>151.058.725</strong></td>
+            </tr>
+        </tfoot>
+        <!-- col = título na coluna, row = título da linha. SOMENTE PARA TH -->
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718 </td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524 </td>
+            </tr>
+            <tr>
+                <td> Bahia</td>
+                <td class="num">14 141 626 	</td>
+            </tr>
+            <tr>
+                <td> Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td> Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957 </td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361 </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quis corrupti hic odio neque iste asperiores iusto enim, corporis, aspernatur quasi a error minima laudantium facere officia illum dolore voluptate?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste natus necessitatibus saepe exercitationem tenetur, optio, error minus totam aut vero blanditiis distinctio ad enim ipsa nihil expedita porro praesentium magnam?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis sit quae aliquid ea deserunt error, ducimus eaque dicta culpa consequatur laudantium modi nisi blanditiis impedit voluptatem, eligendi, corrupti aperiam.
+    </p>
+</body>
+</html>

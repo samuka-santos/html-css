@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela 01</title>
+    <title>Tabela 01-2</title>
     
     <style>
         body {
@@ -12,42 +12,23 @@
         }
 
         table {
-            border: 4px solid black;
-            border-radius: 10px; 
-            text-align: center;
+            width: 400px;
+            height: 400px;
             margin: auto;
+            border-collapse: collapse;
+            border-radius: 10px; /* "border-collapse: collapse;" kkk */
             background-color: lightgray;
-            color: white;
+            border: 4px solid black;
         }
-
-        tr {
-            background-color: purple;
-        }
-
-        tr.linha {
-            background-color: blue;
-            color: white;
-        }
-
-        tr.linha:hover {
-            background-color: red;
-        }
-
         td {
-            padding: 2px 20px 2px 20px;
             border: 2px solid black;
-            margin: 5px; /* não funciona com o collapse em table */
-            border-radius: 10px; 
+            padding: 10px;
+            border-radius: 10px; /* "border-collapse: collapse;" kkkkk */
+            background-color: white;
         }
-
-        td.dado {
-            background-color: green;
-            padding: 50px; /* afeta a linha e coluna inteira da tabela */  
-            transition-duration: 0.1s; 
-        }
-        
-        td.dado:hover {
-            background-color: orangered;   
+        td.numero {
+            text-align: right;
+            vertical-align: bottom;
         }
     </style>
 </head>
@@ -69,17 +50,17 @@
         <tr class="linha">  <!-- Segunda linha -->
             <td>B1</td>
             <td>B2</td>
-            <td>B3</td>
+            <td class="numero">100</td>
         </tr>
         <tr> <!-- Terceira linha -->
             <td>C1</td>
             <td>C2</td>
-            <td>C3</td>
+            <td class="numero">200</td>
         </tr>
         <tr> <!-- Quarta linha -->
             <td>D1</td>
             <td>D2</td>
-            <td class="dado">D3</td>
+            <td class="numero">300</td>
         </tr>
     </table>
 </body>
