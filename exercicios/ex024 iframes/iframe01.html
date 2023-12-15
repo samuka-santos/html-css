@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        iframe {
+            width: 500px;
+            height: 500px;
+        } /* As config. do iframe prevalece no CSS ao invés das que estão no parâmetro */
+    </style>
+</head>
+<body>
+    <h1>Testando iframes</h1>
+    <p>
+        Aqui eu tenho o site do 
+
+        <iframe src="https://cursoemvideo.com" frameborder="0" width="500px"> <!-- scolling="auto/yes/no"-->
+            <a href="https://cursoemvideo.com">Curso em Vídeo</a>
+        </iframe>
+
+        onde eu aprendo a fazer sites
+    </p>
+    <p>
+        infelizmente, tem alguns sites, ex: 
+
+        <iframe src="https://google.com" frameborder="0" height="600px">
+            <a href="https://google.com"></a>
+        </iframe>,
+
+         que tem proteção contra iframes
+    </p>
+    <p>
+        Também tem o meu site: 
+
+        <iframe src="https://samuka-santos.github.io/psicologiadascores" frameborder="0" width="400px" height="400px"></iframe>
+    </p>
+</body>
+</html>

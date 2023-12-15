@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando links dentro de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            border: 2px solid black;
+            width: 95vw;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carregando links dentro de iframes</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique doloribus provident exercitationem quia laborum ea libero itaque, molestiae nobis nam aperiam quas, inventore, maiores numquam beatae porro vitae quasi quidem.
+    </p>
+    <ul>
+        <li><a target="janela" href="more_pages/pag01.html">Página 1</a></li>
+        <li><a target="janela" href="more_pages/pag02.html">Página 2</a></li>
+        <li><a target="janela" href="more_pages/pag03.html">Página 3</a></li>
+        <li><a target="janela" href="">Limpar iframe</a></li> <!-- não deu muito certo kkkk -->
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste porro maxime labore voluptas veritatis nemo, corporis provident, dignissimos esse iusto quas pariatur unde iure doloribus. Quibusdam ipsum dolores blanditiis totam?
+    </p>
+    <iframe name="janela" srcdoc="<h1>HTML dentro do iframe</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, perferendis ea? Unde officiis dolor, et dignissimos, laudantium omnis deserunt libero, doloribus ipsum fuga quas harum. Eum deleniti id nesciunt est.</p>" frameborder="0"></iframe>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quod doloremque dolorem dignissimos, consequuntur excepturi, perspiciatis veniam aliquam quibusdam obcaecati cumque ducimus provident expedita ea placeat a rerum ullam voluptatem!
+    </p>
+</body>
+</html>
